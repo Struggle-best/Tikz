@@ -1,0 +1,9 @@
+ \begin{tikzpicture}[>=latex,scale=1]
+  \node (k1) at (2,0)[rectangle,draw=black,fill=white]{控制器};
+  \node (k2) at (6,0)[rectangle,draw=black,fill=white]{被控对象};
+  
+  \draw[->](-1,0)--node[above]{输入量}node[below]{$ r(t) $}(k1);
+  \draw[->](k1)--node[above]{控制作用}node[below]{$ u(t) $}(k2);
+  \draw[->](k2)--node[above]{输出量}node[below]{$ y(t) $}(9,0);
+  
+ \end{tikzpicture}
